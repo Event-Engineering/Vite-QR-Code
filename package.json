@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Event-Engineering/Vite-Qr-Code.git"
+		"url": "git+https://github.com/Event-Engineering/Vite-QR-Code.git"
 	},
 	"keywords": [
 		"vite",
@@ -24,7 +24,7 @@
 	"author": "Event Engineering Ltd",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Event-Engineering/Vite-Qr-Code/issues"
+		"url": "https://github.com/Event-Engineering/Vite-QR-Code/issues"
 	},
-	"homepage": "https://github.com/Event-Engineering/Vite-Qr-Code"
+	"homepage": "https://github.com/Event-Engineering/Vite-QR-Code"
 }
