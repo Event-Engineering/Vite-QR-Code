@@ -1,0 +1,29 @@
+{
+	"name": "@eventengineering/vite-qr-code",
+	"version": "1.0.0",
+	"description": "Displays a QR Code to the Vite server when host enabled",
+	"main": "index.js",
+	"type": "module",
+	"dependencies": {
+		"eslint": "^8.56.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Event-Engineering/Vite-Qr-Code.git"
+	},
+	"keywords": [
+		"vite",
+		"http",
+		"server",
+		"qr",
+		"qrcode",
+		"camera",
+		"quick"
+	],
+	"author": "Event Engineering Ltd",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Event-Engineering/Vite-Qr-Code/issues"
+	},
+	"homepage": "https://github.com/Event-Engineering/Vite-Qr-Code"
+}
