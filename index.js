@@ -58,7 +58,7 @@ class QrCodeServer {
 		this.#addressSets.push(addressSet);
 
 		this.protocols.forEach((protocol) => {
-			let url = protocol + '://' + (family === 'IPv4' ? address : '[' + address + ']') + ':' + port;
+			let url = protocol + '://' + (family === 'IPv4' ? address : '[' + address + ']') + ':' + port + '/';
 			QrCode.toString(url, {type: 'terminal', small: true, color: {light: '#cd3088ff', dark: '#000000ff'}, })
 			.then((code) => {
 				setTimeout(() => {
