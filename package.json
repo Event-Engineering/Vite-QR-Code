@@ -1,6 +1,6 @@
 {
 	"name": "@eventengineering/vite-qr-code",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Displays a QR Code to the Vite server when host enabled",
 	"main": "index.js",
 	"type": "module",
