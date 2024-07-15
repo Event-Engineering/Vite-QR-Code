@@ -13,7 +13,7 @@ class QrCodeServer {
 
 	get networks() {
 		return this.#settings.networks || Object.entries(networkInterfaces())
-		.map(([interface, addresses]) => {
+		.map(([interfaceName, addresses]) => {
 			let address;
 
 			if (this.addressFamilies && Array.isArray(this.addressFamilies) && this.addressFamilies.length) {
