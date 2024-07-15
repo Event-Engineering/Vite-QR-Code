@@ -12,9 +12,28 @@ class QrCodeServer {
 	}
 
 	get networks() {
-		return this.#settings.networks || Object.values(networkInterfaces())
-		.flat()
+		return this.#settings.networks || Object.entries(networkInterfaces())
+		.map(([interface, addresses]) => {
+			let address;
+
+			if (this.addressFamilies && Array.isArray(this.addressFamilies) && this.addressFamilies.length) {
+				this.addressFamilies.find((f) => address = addresses.find(({family}) => f === true || f === family));
+			} else {
+				address = addresses[0];
+			}
+
+			if ( ! address) {
+				return {internal: true};
+			}
+
+			address.interface = interfaceName;
+			return address;
+		})
 		.filter(v => ! v.internal);
+	}
+
+	get addressFamilies() {
+		return (typeof this.#settings.addressFamilies === 'string' ? [this.#settings.addressFamilies] : this.#settings.addressFamilies) || ['IPv4', 'IPv6'];
 	}
 
 	constructor(settings) {
