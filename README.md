@@ -26,8 +26,9 @@ export default defineConfig(() => ({
 
 A settings object can be passed into the function. This can contain:
 
+ - `addressFamilies` (String, truthy value, or array of stirng or TRUE - defaults to ["IPv4", "IPv6"], TRUE implies any family of IP address)
  - `networks` (Array of object - defaults to all found networks, each object must contain address and family)
- - `protocols` (Array of string - defaults to "http")
+ - `protocols` (Array of string - defaults to ["http"])
 
 ## Caveats
 
