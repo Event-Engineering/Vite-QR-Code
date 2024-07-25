@@ -4,6 +4,9 @@
 	"description": "Displays a QR Code to the Vite server when host enabled",
 	"main": "index.js",
 	"type": "module",
+	"scripts": {
+		"lint": "eslint --ext .js,.mjs,.cjs ."
+	},
 	"dependencies": {
 		"eslint": "^8.56.0",
 		"qrcode": "^1.5.3"
